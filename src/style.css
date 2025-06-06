@@ -45,7 +45,6 @@
   --main-heading-size: var(--size-500);
   --preparation-sub-heading-size: var(--size-350);
   --preparation-sub-heading-spacing: var(--size-200);
-  --preparation-ul-li-line-height: var(--size-400);
   --section-spacing: var(--size-400);
   --padding-recipe-card-tblr: var(--size-500);
   --padding-body-tb: var(--size-1600);
@@ -53,12 +52,17 @@
   --padding-preparation-tblr: var(--size-300);
   --padding-preparation-ul-left: var(--size-300);
   --padding-preparation-ul-li-left: var(--size-200);
+  --padding-preparation-ul-li-bottom: var(--size-100);
+  --padding-instructions-ol-left: var(--size-300);
+  --padding-instructions-ol-li-left: var(--size-200);
+  --padding-instructions-ol-li-bottom: var(--size-100);
   --padding-sections-bottom: var(--size-400);
   --padding-nutrition-paragraph-bottom: var(--size-300);
   --subheadings-font-weight: var(--font-weight-regular);
   --subheadings-padding-bottom: var(--size-300);
   --main-heading-font-weight: var(--font-weight-bold);
   --preparation-heading-font-weight: var(--font-weight-semi-bold);
+  --nutrition-table-font-weight: var(--font-weight-bold);
 }
 
 *,
@@ -158,7 +162,7 @@ img {
 
 .preparation ul > li {
   padding-left: var(--padding-preparation-ul-li-left);
-  line-height: var(--preparation-ul-li-line-height);
+  padding-bottom: var(--padding-preparation-ul-li-bottom);
 }
 
 .preparation li::marker {
@@ -171,6 +175,15 @@ img {
 
 .li__marker__ol__bold li::marker {
   font-weight: bolder;
+}
+
+.instructions ol {
+  padding-left: var(--padding-instructions-ol-left);
+}
+
+.instructions ol > li {
+  padding-left: var(--padding-instructions-ol-li-left);
+  padding-bottom: var(--padding-instructions-ol-li-bottom);
 }
 
 .nutrition p {
@@ -188,7 +201,18 @@ img {
 
 .nutrition__table td:nth-child(even) {
   color: var(--color-td-font-color);
-  font-weight: var(--font-weight-semi-bold);
+  font-weight: var(--nutrition-table-font-weight);
+  padding-left: 16x;
+  padding-right: 32px;
+}
+
+.nutrition__table td:nth-child(odd) {
+  padding-left: 32px;
+}
+
+.nutrition__table tr td {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .attribution {
