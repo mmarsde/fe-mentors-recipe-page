@@ -185,9 +185,12 @@ ul > li {
   padding-left: var(--padding-instructions-ol-left);
 }
 
+.instructions ol > li:not(:last-child) {
+  padding-bottom: var(--padding-instructions-ol-li-bottom);
+}
+
 .instructions ol > li {
   padding-left: var(--padding-instructions-ol-li-left);
-  padding-bottom: var(--padding-instructions-ol-li-bottom);
 }
 
 .nutrition p {
