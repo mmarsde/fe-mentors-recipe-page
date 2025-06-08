@@ -50,9 +50,6 @@
   --padding-body-tb: var(--size-1600);
   --padding-body-lr: var(--size-600);
   --padding-preparation-tblr: var(--size-300);
-  --padding-preparation-ul-left: var(--size-300);
-  --padding-preparation-ul-li-left: var(--size-200);
-  --padding-preparation-ul-li-bottom: var(--size-100);
   --padding-instructions-ol-left: var(--size-300);
   --padding-instructions-ol-li-left: var(--size-200);
   --padding-instructions-ol-li-bottom: var(--size-100);
@@ -156,17 +153,20 @@ img {
   margin-bottom: var(--preparation-sub-heading-spacing);
 }
 
-.preparation ul {
-  padding-left: var(--padding-preparation-ul-left);
-}
-
-.preparation ul > li {
-  padding-left: var(--padding-preparation-ul-li-left);
-  padding-bottom: var(--padding-preparation-ul-li-bottom);
-}
-
 .preparation li::marker {
   color: var(--color-preparation-ul-li);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul > li:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+ul > li {
+  padding-left: 20px;
 }
 
 .li__marker li::marker {
@@ -175,6 +175,10 @@ img {
 
 .li__marker__ol__bold li::marker {
   font-weight: bolder;
+}
+
+.li__marker__ul__smaller li::marker {
+  font-size: smaller;
 }
 
 .instructions ol {
