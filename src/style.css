@@ -162,7 +162,7 @@ ul {
 }
 
 ul > li:not(:last-child) {
-  padding-bottom: 16px;
+  padding-bottom: 8px;
 }
 
 ul > li {
@@ -217,7 +217,7 @@ ul > li {
   padding-left: 32px;
 }
 
-.nutrition__table tr td {
+.nutrition__table tr > td {
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -225,6 +225,7 @@ ul > li {
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding-top: 24px;
 }
 
 .attribution a {
