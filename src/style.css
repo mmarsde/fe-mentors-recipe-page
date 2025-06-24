@@ -11,39 +11,34 @@
   --color-stone-150: hsl(30, 18%, 87%);
   --color-stone-100: hsl(30, 54%, 90%);
   --color-brown-800: hsl(14, 45%, 36%);
-  --size-1600: 128px;
-  --size-600: 48px;
-  --size-500: 40px;
-  --size-400: 32px;
-  --size-300: 24px;
-  --size-350: 20px;
-  --size-200: 16px;
-  --size-150: 12px;
-  --size-100: 8px;
+  --size-1600: 128px; /* super-large */
+  --size-600: 48px; /* xx-large */
+  --size-500: 40px; /* x-large */
+  --size-400: 32px; /* large */
+  --size-300: 24px; /* medium-large */
+  --size-250: 20px; /* medium */
+  --size-200: 16px; /* small-medium */
+  --size-150: 12px; /* small */
+  --size-100: 8px; /* x-small */
   --font-weight-regular: 400;
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
   /* custom variables */
   --color-attribution-links: var(--color-indigo-600);
-  --color-card-bg-color: var(--color-white);
-  --color-preparation-bg-color: var(--color-rose-50);
-  --color-bg-primary: var(--color-stone-100);
+  --color-main-background: var(--color-white);
+  --color-preparation-background: var(--color-rose-50);
+  --color-body-background: var(--color-stone-100);
   --color-font-primary: var(--color-stone-600);
-  --color-border-section-divider: var(--color-stone-150);
   --color-font-main-heading: var(--color-stone-900);
-  --color-fonts-sub-headings: var(--color-brown-800);
-  --color-font-preparation-sub-heading: var(--color-rose-800);
-  --color-preparation-ul-li: var(--color-rose-800);
-  --color-li-marker: var(--color-brown-800);
-  --color-tr-bottom-border: var(--color-stone-150);
-  --color-td-font-color: var(--color-brown-800);
-  --img-border-radius: var(--size-150);
-  --recipe_card_border-radius: var(--size-300);
-  --preparation-border-radius: var(--size-150);
+  --color-font-accent-primary: var(--color-brown-800);
+  --color-font-accent-secondary: var(--color-rose-800);
+  --color-border: var(--color-stone-150);
+  --size-medium-border-radius: var(--size-300);
+  --size-small-border-radius: var(--size-150);
   --text-content-margin-top: var(--size-500);
   --main-heading-spacing: var(--size-300);
   --main-heading-size: var(--size-500);
-  --preparation-sub-heading-size: var(--size-350);
+  --preparation-sub-heading-size: var(--size-250);
   --preparation-sub-heading-spacing: var(--size-200);
   --section-spacing: var(--size-400);
   --padding-recipe-card-tblr: var(--size-500);
@@ -73,14 +68,14 @@
   display: grid;
   font-family: "Outfit", Arial, Helvetica, sans-serif;
   color: var(--color-font-primary);
-  background-color: var(--color-bg-primary);
+  background-color: var(--color-body-background);
   padding: var(--padding-body-tb) var(--padding-body-lr);
 }
 
 .recipe__card {
   padding: var(--padding-recipe-card-tblr);
-  background-color: var(--color-card-bg-color);
-  border-radius: var(--recipe_card_border-radius);
+  background-color: var(--color-main-background);
+  border-radius: var(--size-medium-border-radius);
   justify-self: center;
   height: 100%;
   max-width: 736px;
@@ -89,7 +84,7 @@
 img {
   width: 100%;
   position: relative;
-  border-radius: var(--img-border-radius);
+  border-radius: var(--size-small-border-radius);
 }
 
 .text__content {
@@ -103,7 +98,7 @@ img {
 
 .sub__headings {
   font-size: 28px;
-  color: var(--color-fonts-sub-headings);
+  color: var(--color-font-accent-primary);
   font-weight: var(--subheadings-font-weight);
   padding-bottom: var(--subheadings-padding-bottom);
 }
@@ -123,7 +118,7 @@ img {
 .ingredients,
 .instructions {
   border-bottom: solid 1px;
-  border-color: var(--color-border-section-divider);
+  border-color: var(--color-border);
   padding-bottom: var(--padding-sections-bottom);
 }
 
@@ -140,21 +135,21 @@ img {
 }
 
 .preparation {
-  background-color: var(--color-preparation-bg-color);
+  background-color: var(--color-preparation-background);
   height: 100%;
-  border-radius: var(--preparation-border-radius);
+  border-radius: var(--size-small-border-radius);
   padding: var(--padding-preparation-tblr);
 }
 
 .preparation h2 {
   font-size: var(--preparation-sub-heading-size);
-  color: var(--color-font-preparation-sub-heading);
+  color: var(--color-font-accent-secondary);
   font-weight: var(--preparation-heading-font-weight);
   margin-bottom: var(--preparation-sub-heading-spacing);
 }
 
 .preparation li::marker {
-  color: var(--color-preparation-ul-li);
+  color: var(--color-font-accent-secondary);
 }
 
 ul {
@@ -170,7 +165,7 @@ ul > li {
 }
 
 .li__marker li::marker {
-  color: var(--color-li-marker);
+  color: var(--color-font-accent-primary);
 }
 
 .li__marker__ol__bold li::marker {
@@ -203,11 +198,11 @@ ul > li {
 }
 
 .nutrition__table tr:not(:last-child) {
-  border-bottom: 1px solid var(--color-tr-bottom-border);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .nutrition__table td:nth-child(even) {
-  color: var(--color-td-font-color);
+  color: var(--color-font-accent-primary);
   font-weight: var(--nutrition-table-font-weight);
   padding-left: 16x;
   padding-right: 32px;
