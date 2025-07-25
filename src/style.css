@@ -199,7 +199,7 @@
   color: var(--color-attribution-links);
 }
 
-@media screen and (max-width: 644px) {
+@media screen and (max-width: 650px) {
   .recipe-container {
     display: grid;
     background-color: var(--color-white);
