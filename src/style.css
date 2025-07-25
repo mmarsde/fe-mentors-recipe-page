@@ -228,6 +228,11 @@
 
   .recipe-title__heading {
     font-size: var(--size-450);
+    line-height: 1em;
+  }
+
+  .recipe-title__description {
+    text-justify: auto;
   }
 
   .recipe-text-container {
