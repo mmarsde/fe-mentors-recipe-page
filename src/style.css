@@ -64,6 +64,7 @@
 
 .list {
   padding-left: var(--size-250);
+  line-height: 1.5em;
 }
 
 .list__item {
@@ -126,6 +127,7 @@
 
 .recipe-title .recipe-title__description {
   margin-top: var(--size-300);
+  line-height: 1.5em;
 }
 
 .recipe-section__heading {
@@ -151,6 +153,7 @@
 
 .instructions .list {
   padding-left: var(--size-300);
+  line-height: 1.5em;
 }
 
 .instructions .list > .list__item {
@@ -159,6 +162,7 @@
 
 .nutrition__description {
   padding-bottom: var(--size-300);
+  line-height: 1.5em;
 }
 
 .nutrition-table {
