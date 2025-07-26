@@ -14,7 +14,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
 
@@ -52,17 +51,12 @@ The key takeaways for me were as follows:
 
 - Structuring and presenting the content using semantic HTML elements.
   - This describes the meaning and purpose of the content, aiding in readability, SEO and accessibility. e.g. using `<table>` to structure the nutritional information in a tabular format on the recipe page.
-  -
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- BEM (Block, Element, Modifier) - For consistent, readable CSS class naming conventions.
+- CSS Custom properties - for code reuse and maintainable stylesheets.
 
 ### Useful resources
 
-- [MDN Docs](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [BEM](https://en.bem.info/methodology/) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
