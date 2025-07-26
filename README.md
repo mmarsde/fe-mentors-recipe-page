@@ -56,8 +56,8 @@ The key takeaways for me were as follows:
 
 ### Useful resources
 
-- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [BEM](https://en.bem.info/methodology/) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [BEM](https://en.bem.info/methodology/)
 
 ## Author
 
